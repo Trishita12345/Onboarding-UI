@@ -7,7 +7,7 @@ import Screen4 from "./screens/Screen4";
 import LOGO from "./assets/logo.png";
 import PROGRESS_BAR from "./assets/progressBar.png";
 import { useState } from "react";
-// import ProgressBar from "./components/progressBar";
+import ProgressBar from "./components/progressBar";
 
 const buttonLabel1 = "Create Workspace";
 
@@ -28,7 +28,7 @@ function App() {
       <Flex column justifyCenter alignCenter fullHeight gap="55px">
         <img src={LOGO} alt="logo" />
         {/* <img src={PROGRESS_BAR} alt="PROGRESS_BAR" /> */}
-        {/* <ProgressBar currScreen={currScreen} /> */}
+        <ProgressBar currScreen={currScreen} />
         <Flex column alignCenter gap="25px">
           {screens[currScreen]}
           <Flex column width="60%">

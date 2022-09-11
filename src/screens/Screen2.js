@@ -17,7 +17,7 @@ const Screen2 = () => {
         <Label variant={C_LABEL_VARIANTS.HEADING} label={heading}></Label>
         <Label variant={C_LABEL_VARIANTS.SECONDARY} label={subHeading}></Label>
       </Flex>
-      <Flex column width="55%">
+      <Flex column width="60%">
         <Label variant={C_LABEL_VARIANTS.PRIMARY} label={fieldLabel1}></Label>
         <TextInput />
         <Flex>

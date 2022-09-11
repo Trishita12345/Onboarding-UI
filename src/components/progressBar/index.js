@@ -4,90 +4,91 @@ import is from "styled-is";
 import Flex from "../flex";
 
 const StyledStepperItem = styled.div`
-  ${
-    "" /* position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1; */
-  }
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1vw;
-  width: 1vw;
-  padding: 2%;
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: 1px solid var(--dark-grey);
-  z-index: 1;
+  flex: 1;
   &:before {
     position: absolute;
     content: "";
-    border-bottom: 2px solid var(--dark-grey);
+    border-bottom: 2px solid var(--light-grey);
     width: 100%;
-    top: 50%;
     left: -50%;
-    z-index: -1;
+    top: 50%;
+    z-index: 2;
   }
 
   &:after {
     position: absolute;
     content: "";
-    border-bottom: 2px solid var(--dark-grey);
+    border-bottom: 2px solid var(--light-grey);
     width: 100%;
     top: 50%;
     left: 50%;
-    z-index: -1;
+    z-index: 2;
   }
+  ${is("active")`
+  &:before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid var(--violet);
+    width: 100%;
+    top: 50%;
+    left: -50%;
+    z-index: 3;
+  }
+ 
+  &:after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid var(--violet);
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+  }
+  `}
   &:first-child::before,
   &:last-child::after {
     content: none;
   }
-
-  ${is("active")`
-    background-color: var(--violet);
-    border:1px solid var(--violet);
-    ::before,::after{
-        border-bottom: 2px solid var(--violet);
-    }
-  `};
 `;
 
 const StyledStepCounter = styled.div`
   position: relative;
-  z-index: 2;
+  z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  color: #000;
+  font-size: 0.7vw;
+  background-color: var(--light-grey);
+  height: 2vw;
+  width: 2vw;
   border-radius: 50%;
-  background-color: var(--violet);
-  margin-bottom: 6px;
+
+  ${is("active")`
+    background-color: var(--violet);
+    color: var(--light-grey); 
+  `}
 `;
 
 const ProgressBar = ({ currScreen }) => {
   const steps = [1, 2, 3, 4];
   const nodes = steps.map((step, index) =>
     index <= currScreen ? (
-      <StyledStepperItem active>{step}</StyledStepperItem>
+      <StyledStepperItem active>
+        <StyledStepCounter active>{step}</StyledStepCounter>
+      </StyledStepperItem>
     ) : (
-      <StyledStepperItem>{step}</StyledStepperItem>
+      <StyledStepperItem>
+        <StyledStepCounter>{step}</StyledStepCounter>
+      </StyledStepperItem>
     )
   );
   return (
-    // <StyledProgressBar>
-    //   {steps.map((item, idx) => (
-    //     <StyledStep key={idx}>
-    //       <div className={"step-counter " + activeIdx == idx ? "active" : ""}>
-    //         {item}
-    //       </div>
-    //     </StyledStep>
-    //   ))}
-    // </StyledProgressBar>
-    <Flex justifyCenter gap={"25px"}>
+    <Flex justifyBetween gap={"0px"} width={"80%"}>
       {nodes}
     </Flex>
   );
