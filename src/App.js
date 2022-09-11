@@ -1,6 +1,9 @@
 import Button from "./components/button";
 import Flex from "./components/flex";
+import Screen1 from "./screens/Screen1";
 import Screen2 from "./screens/Screen2";
+import Screen3 from "./screens/Screen3";
+import Screen4 from "./screens/Screen4";
 import LOGO from "./assets/logo.png";
 import PROGRESS_BAR from "./assets/progressBar.png";
 
@@ -12,9 +15,9 @@ function App() {
       <Flex column justifyCenter alignCenter fullHeight gap="55px">
         <img src={LOGO} alt="logo" />
         <img src={PROGRESS_BAR} alt="PROGRESS_BAR" />
-        <Flex column alignCenter>
+        <Flex column alignCenter gap="25px">
           <Screen2 />
-          <Flex column width="62%">
+          <Flex column width="60%">
             <Button label={buttonLabel1} handleClick={() => {}} />
           </Flex>
         </Flex>

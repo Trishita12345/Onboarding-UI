@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-
+import is from "styled-is";
 const heading = css`
   font-size: 1.6vw;
   font-weight: bold;
@@ -11,9 +11,9 @@ const primary = css`
   color: var(--dark-grey);
 `;
 const secondary = css`
-  font-size: 0.8vw;
+  font-size: 0.9vw;
   font-weight: 500;
-  color: var(--dark-grey);
+  color: var(--medium-grey);
 `;
 const tertiary = css`
   font-size: 0.8vw;
@@ -31,6 +31,12 @@ const variants = {
 const labelStyles = css`
   display: block;
   ${(props) => variants[props.variant]};
+  ${is("size")`
+    font-size:${(props) => props.size};
+  `};
+  ${is("color")`
+    color:${(props) => props.color};
+  `};
 `;
 
 const StyledLabel = styled.div`

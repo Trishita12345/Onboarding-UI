@@ -1,11 +1,11 @@
 import React from "react";
 import StyledTextInput, { StyledInput, StyledSpan } from "./StyledTextInput";
 
-const TextInput = ({ prefix, prefixLabel }) => {
+const TextInput = ({ prefix, prefixLabel, placeholderText }) => {
   return (
     <StyledTextInput>
       {prefix ? <StyledSpan>{prefixLabel}</StyledSpan> : null}
-      <StyledInput />
+      <StyledInput placeholder={placeholderText} />
     </StyledTextInput>
   );
 };

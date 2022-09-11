@@ -4,13 +4,16 @@ const inputStyles = css`
   flex-grow: 1;
   padding: 2.5%;
   font-size: 0.8vw;
-  color: var(--medium-grey);
+  color: var(--grey);
   border: none;
   &:hover {
     cursor: pointer;
   }
   &:focus {
     outline-color: var(--grey);
+  }
+  ::-webkit-input-placeholder {
+    color: var(--grey);
   }
 `;
 export const StyledInput = styled.input`

@@ -4,13 +4,11 @@ import Flex from "../components/flex";
 import Label from "../components/label";
 import TextInput from "../components/textInput";
 
-const heading = "Let's set up a home for all your work";
-const subHeading = "You can always create another workspace later.";
-const fieldLabel1 = "Workspace Name";
-const fieldLabel2 = "Workspace URL";
-const fieldLabeOptional = "(optional)";
-const prefixLabel = "www.eden.com/";
-const Screen2 = () => {
+const heading = "Welcome! First things first...";
+const subHeading = "You can always change them later.";
+const fieldLabel1 = "Full Name";
+const fieldLabel2 = "Display Name";
+const Screen1 = () => {
   return (
     <Flex column alignCenter gap="60px">
       <Flex column alignCenter>
@@ -22,19 +20,11 @@ const Screen2 = () => {
         <TextInput />
         <Flex>
           <Label variant={C_LABEL_VARIANTS.PRIMARY} label={fieldLabel2}></Label>
-          <Label
-            variant={C_LABEL_VARIANTS.TERTIARY}
-            label={fieldLabeOptional}
-          ></Label>
         </Flex>
-        <TextInput
-          prefix
-          prefixLabel={prefixLabel}
-          placeholderText={"Example"}
-        />
+        <TextInput />
       </Flex>
     </Flex>
   );
 };
 
-export default Screen2;
+export default Screen1;
