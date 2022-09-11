@@ -11,6 +11,9 @@ const Flex = styled.div`
   ${is("fullHeight")`
     height: 100vh;
   `};
+  ${is("flex")`
+    flex: ${(props) => props.flex};
+  `};
 
   /***************************** justify-content *****************************/
   ${is("justifyEnd")`
