@@ -7,9 +7,9 @@ import Label from "../label";
 import { C_LABEL_VARIANTS } from "../../common/constants";
 import Flex from "../flex";
 
-const Card = ({ heading, subHeading, userType }) => {
+const Card = ({ heading, subHeading, userType, isSelected }) => {
   return (
-    <StyledCard>
+    <StyledCard isSelected={isSelected}>
       <Flex column gap={"20px"}>
         {userType == "individual" ? (
           <RiUserFill size={"1.2vw"} />
