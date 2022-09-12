@@ -18,6 +18,7 @@ const cardStyles = css`
     cursor: pointer;
     color: var(--violet);
   }
+
   ${is("isSelected")`  
     border: 1px solid var(--violet);
     color: var(--violet);

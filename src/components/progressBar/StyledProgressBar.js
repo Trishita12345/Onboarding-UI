@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import is from "styled-is";
-import Flex from "../flex";
 
 export const StyledStepperItem = styled.div`
   position: relative;

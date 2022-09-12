@@ -26,9 +26,9 @@ code {
     monospace;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .App {
     margin: 0;
     padding: 0;
   }
-}
+} */

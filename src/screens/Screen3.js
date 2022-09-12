@@ -24,14 +24,14 @@ const Screen3 = () => {
           heading={cardHeading1}
           subHeading={cardSubHeading1}
           isSelected={selected === 1}
-          onClick={() => setSelected(() => 1)}
+          handleClick={() => setSelected(() => 1)}
         />
         <Card
           userType={"group"}
           heading={cardHeading2}
           subHeading={cardSubHeading2}
           isSelected={selected === 2}
-          onClick={() => setSelected(() => 2)}
+          handleClick={() => setSelected(() => 2)}
         />
       </Flex>
     </Flex>

@@ -5,7 +5,6 @@ import Screen2 from "./screens/Screen2";
 import Screen3 from "./screens/Screen3";
 import Screen4 from "./screens/Screen4";
 import LOGO from "./assets/logo.png";
-import PROGRESS_BAR from "./assets/progressBar.png";
 import { useState } from "react";
 import ProgressBar from "./components/progressBar";
 
