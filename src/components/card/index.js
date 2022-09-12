@@ -1,5 +1,5 @@
 import React from "react";
-import StyledCard from "./StyledCard";
+import StyledCard from "./styledCard";
 import { RiUserFill } from "react-icons/ri";
 import { HiUserGroup } from "react-icons/hi";
 

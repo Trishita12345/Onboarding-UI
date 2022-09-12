@@ -1,5 +1,5 @@
 import React from "react";
-import StyledButton from "./StyledButton";
+import StyledButton from "./styledButton";
 
 const Button = ({ handleClick, label }) => {
   return <StyledButton onClick={handleClick}>{label}</StyledButton>;

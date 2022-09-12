@@ -1,5 +1,5 @@
 import React from "react";
-import StyledLabel from "./StyledLabel";
+import StyledLabel from "./styledLabel";
 
 const Label = ({ label, variant, size, color }) => {
   return (

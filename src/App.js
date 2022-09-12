@@ -1,9 +1,9 @@
 import Button from "./components/button";
 import Flex from "./components/flex";
-import Screen1 from "./screens/Screen1";
-import Screen2 from "./screens/Screen2";
-import Screen3 from "./screens/Screen3";
-import Screen4 from "./screens/Screen4";
+import Screen1 from "./screens/screen1";
+import Screen2 from "./screens/screen2";
+import Screen3 from "./screens/screen3";
+import Screen4 from "./screens/screen4";
 import LOGO from "./assets/logo.png";
 import { useState } from "react";
 import ProgressBar from "./components/progressBar";

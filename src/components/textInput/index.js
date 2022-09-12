@@ -1,5 +1,5 @@
 import React from "react";
-import StyledTextInput, { StyledInput, StyledSpan } from "./StyledTextInput";
+import StyledTextInput, { StyledInput, StyledSpan } from "./styledTextInput";
 
 const TextInput = ({ prefix, prefixLabel, placeholderText }) => {
   return (

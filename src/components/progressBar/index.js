@@ -1,6 +1,6 @@
 import React from "react";
 import Flex from "../flex";
-import { StyledStepperItem, StyledStepCounter } from "./StyledProgressBar";
+import { StyledStepperItem, StyledStepCounter } from "./styledProgressBar";
 
 const ProgressBar = ({ currScreen }) => {
   const steps = [1, 2, 3, 4];
