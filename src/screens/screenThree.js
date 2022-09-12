@@ -10,7 +10,7 @@ const cardHeading1 = "For myself";
 const cardSubHeading1 = "Write better. Think more clearly. Stay organized.";
 const cardHeading2 = "With my team";
 const cardSubHeading2 = "Wikis, docs, tasks & projects, all in one place.";
-const Screen3 = () => {
+const ScreenThree = () => {
   const [selected, setSelected] = useState(0);
   return (
     <Flex column alignCenter gap="40px">
@@ -38,4 +38,4 @@ const Screen3 = () => {
   );
 };
 
-export default Screen3;
+export default ScreenThree;

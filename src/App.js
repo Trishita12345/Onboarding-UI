@@ -1,9 +1,9 @@
 import Button from "./components/button";
 import Flex from "./components/flex";
-import Screen1 from "./screens/screen1";
-import Screen2 from "./screens/screen2";
-import Screen3 from "./screens/screen3";
-import Screen4 from "./screens/screen4";
+import ScreenOne from "./screens/screenOne";
+import ScreenTwo from "./screens/screenTwo";
+import ScreenThree from "./screens/screenThree";
+import ScreenFour from "./screens/screenFour";
 import LOGO from "./assets/logo.png";
 import { useState } from "react";
 import ProgressBar from "./components/progressBar";
@@ -12,7 +12,7 @@ const buttonLabel1 = "Create Workspace";
 
 function App() {
   const [currScreen, setCurrScreen] = useState(0);
-  const screens = [<Screen1 />, <Screen2 />, <Screen3 />, <Screen4 />];
+  const screens = [<Screen1 />, <ScreenTwo />, <ScreenThree />, <ScreenFour />];
   const handleButtonClick = () => {
     if (currScreen < 3) {
       setCurrScreen(() => currScreen + 1);

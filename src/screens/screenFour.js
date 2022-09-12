@@ -7,7 +7,7 @@ import { HiCheckCircle } from "react-icons/hi";
 const heading = "Congratulations, Eren!";
 const subHeading =
   "You have completed onboarding, you can start using the Eden!";
-const Screen4 = () => {
+const ScreenFour = () => {
   return (
     <Flex column alignCenter gap="20px">
       <Flex column alignCenter gap="40px">
@@ -27,4 +27,4 @@ const Screen4 = () => {
   );
 };
 
-export default Screen4;
+export default ScreenFour;
